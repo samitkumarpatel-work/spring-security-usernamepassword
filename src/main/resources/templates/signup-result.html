@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Getting Started: Handling Form Submission</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body style="margin-left: auto; margin-right: auto; width: 50%">
+        <h1>Signup successful!</h1>
+        <p th:text="'Your id: ' + ${user.id}" />
+        <p th:text="'Your Username : ' + ${user.username}" />
+        <a href="/signup">Register another user ?</a> OR <a href="/login">Login ?</a>
+    </body>
+</html>

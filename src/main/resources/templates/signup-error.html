@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+  </head>
+  <body style="margin-left: auto; margin-right: auto; width: 50%">
+    <h1>Signup Error</h1>
+    <hr/>
+        <p th:text="${errorMessage}" />
+    <hr/>
+    <p>Click <a th:href="@{/signup}">try again ?</a> </p>
+  </body>
+</html>

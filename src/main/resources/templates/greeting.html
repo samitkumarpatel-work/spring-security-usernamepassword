@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    <head>
+        <title>Getting</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body style="margin-left: auto; margin-right: auto; width: 50%">
+        <p th:text="|Hello, ${name}!|" />
+        You are Logged as : <span th:remove="tag" sec:authentication="name">unknown</span>
+        <hr/>
+        <p><a href="/">Go back Home</a></p>
+        <p><a href="/logout">Go Back Logout</a></p>
+    </body>
+</html>
